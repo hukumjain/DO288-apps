@@ -11,10 +11,14 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-echo "Customizing installations....."
+echo "-------> Customizing installations....."
 cp -Rf /tmp/src/*.html ./
 
 echo "See my test file here" >> ./test.html
+
+DATE1=date + "%d-%M-%Y"
+
+echo "DATE1 is $DATE1" >> ./date1.html
 
 NEW_DATE=`date "+%d-%b-%Y %H:%M:%S"`
 echo "NEW DATE IS $NEW_DATE" >> ./date.html
