@@ -16,7 +16,7 @@ cp -Rf /tmp/src/*.html ./
 
 echo "See my test file here" >> ./test.html
 
-DATE1=date "+%d-%M-%Y"
+DATE1=`date "+%d-%M-%Y"`
 
 echo "DATE1 is $DATE1" >> ./date1.html
 
