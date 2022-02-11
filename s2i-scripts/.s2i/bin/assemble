@@ -10,21 +10,6 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-echo "==> Installation starts here"
-
-cp -Rf /tmp/src/*.html ./
-
-DATE1=$(date +"%d-%b %H_%M")
-DATE2=$(date +"%A %d %B")
-echo "DATE1 value is $DATE1" >> ./test.html
-echo "DATE2 value is $DATE2" >> ./test.html
-
-
-DATE=`date "+%b %d, %Y @ %H:%M %p"`
-
-echo "---> Creating info page"
-echo "Page built on $DATE" >> ./info.html
-echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
